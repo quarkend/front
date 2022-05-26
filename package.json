@@ -16,6 +16,7 @@
         "emoji-picker-react": "^3.5.1",
         "formik": "^2.2.9",
         "gh-pages": "^4.0.0",
+        "i": "^0.3.7",
         "js-cookie": "^3.0.1",
         "or": "^0.2.0",
         "react": "^17.0.2",
@@ -33,6 +34,7 @@
         "redux": "^4.1.2",
         "reselect": "^4.1.5",
         "timeago-react": "^3.0.4",
+        "timeago.js": "^4.0.0-beta.3",
         "web-vitals": "^2.1.4"
     },
     "scripts": {
