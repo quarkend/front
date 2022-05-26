@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState, useContext } from "react";
 import "./topbar.css";
@@ -22,22 +23,22 @@ export default function Topbar() {
   const { user } = useContext(AuthContext);
   let id = useParams();
   // const  isAdmin = storage.isAmin;
-  // async function getUserData() {
-  //   const URL = `${"/users"}/${id}`;
-  //   const data = await fetch(URL, {
-  //     headers: {
-  //       Authorization: "Bearer " + token,
-  //     },
-  //   });
-  //   const response = await data.json();
-  //   setData(response);
-  //   console.log(response);
-  //   setIsLoaded(true);
-  //   setError(error);
-  // }
-  // useEffect(() => {
-  //   getUserData();
-  // }, []);
+  async function getUserData() {
+    const URL = `${"/users"}/6`;
+    const data = await fetch(URL, {
+      headers: {
+        Authorization: "Bearer " + token,
+      },
+    });
+    const response = await data.json();
+    setData(response);
+    console.log(response);
+    setIsLoaded(true);
+    setError(error);
+  }
+  useEffect(() => {
+    getUserData();
+  }, []);
   return (
     <BrowserRouter>
       <nav>
