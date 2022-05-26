@@ -1,3 +1,5 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable no-unused-vars */
 import React, { useEffect, useState, Fragment } from "react";
 import { useForm } from "react-hook-form";
 import "./profile.css";

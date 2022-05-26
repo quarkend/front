@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState, useContext } from "react";
 import { AuthContext } from "./../../App";
 import { useHistory } from "react-router-dom";
@@ -266,11 +267,7 @@ export default function Post({ post }) {
               <p className="postDate">
                 {" "}
                 Posté le{" "}
-                {post.createdAt
-                  .split("T")
-                  .join(" à ")
-                  .split(".000Z")
-                  .join("")}
+                {post.createdAt.split("T").join(" à ").split(".000Z").join("")}
               </p>
             </div>
             <MenuDots />
