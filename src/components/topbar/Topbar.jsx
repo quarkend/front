@@ -24,7 +24,7 @@ export default function Topbar() {
   let id = useParams();
   // const  isAdmin = storage.isAmin;
   async function getUserData() {
-    const URL = `${"/users"}/6`;
+    const URL = `${"/users"}/${id}`;
     const data = await fetch(URL, {
       headers: {
         Authorization: "Bearer " + token,
