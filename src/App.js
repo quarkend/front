@@ -1,6 +1,6 @@
 import React from "react";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
  
@@ -60,7 +60,7 @@ function App() {
     }
   }, [])
   return (
-    <Router>
+    <Router basename="/front/">
       <AuthContext.Provider
         value={{
           state,
